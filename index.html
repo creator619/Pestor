@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pestor Biztonságtechnika - Professzionális Védelem és Tisztaság</title>
+    <meta name="description"
+        content="Pestor Biztonságtechnika és Takarítás - Riasztórendszerek, kamerák, élőerős őrzés és professzionális takarítás.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="top-bar">
+            <div class="container">
+                <a href="#">Lakossági</a>
+                <a href="#">Üzleti</a>
+                <a href="#">Ipari</a>
+                <a href="#">Kapcsolat</a>
+            </div>
+        </div>
+        <nav class="main-nav container">
+            <div class="logo">
+                <img src="assets/logo.png" alt="Pestor Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#biztonsag">Biztonságtechnika</a></li>
+                <li>
+                <li><a href="#orzes">Élőerős Őrzés</a></li>
+                <li><a href="#takaritas">Takarítás</a></li>
+                <li><a href="#rolunk">Rólunk</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="btn btn-outline" id="search-btn">Keresés</button>
+                <button class="btn btn-primary" id="quote-btn">Ajánlatkérés</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Személyre szabott <span>biztonság</span> és nyugalom.</h1>
+                    <p>Professzionális védelem otthonának és vállalkozásának. Legmodernebb technológia, 24 órás
+                        távfelügyelet és szakképzett őrség.</p>
+                    <div class="hero-btns">
+                        <button class="btn btn-primary">Termékek megtekintése</button>
+                        <button class="btn btn-outline" style="margin-left: 15px;">Helyszíni felmérés</button>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="assets/hero.png" alt="Modern biztonsági megoldások">
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Highlights -->
+        <section class="services" id="biztonsag">
+            <div class="section-head container">
+                <h2>Három Pillér a Biztonságért</h2>
+                <p>Teljeskörű megoldások a tervezéstől a kivitelezésig, az őrzéstől a higiéniáig.</p>
+            </div>
+            <div class="container">
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <img src="assets/security.png" alt="Biztonságtechnika">
+                        <div class="service-card-body">
+                            <h3>Biztonságtechnika</h3>
+                            <p>Intelligens riasztórendszerek, HD kamerás megfigyelés és beléptető rendszerek telepítése
+                                és karbantartása.</p>
+                            <a href="#" class="btn btn-outline">Részletek</a>
+                        </div>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <img src="assets/hero.png" alt="Élőerős őrzés">
+                        <div class="service-card-body">
+                            <h3>Élőerős Őrzés</h3>
+                            <p>Több mint 200 képzett szakemberrel biztosítjuk telephelyek, irodák és rendezvények
+                                fizikai védelmét.</p>
+                            <a href="#" class="btn btn-outline">Részletek</a>
+                        </div>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="service-card" id="takaritas">
+                        <img src="assets/cleaning.png" alt="Takarítás">
+                        <div class="service-card-body">
+                            <h3>BP-Cleanic Takarítás</h3>
+                            <p>Professzionális takarítási szolgáltatások irodák, raktárak és magánházak részére
+                                Ausztriában és Magyarországon.</p>
+                            <a href="#" class="btn btn-outline">Részletek</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Solutions Tabs (Resideo Style) -->
+        <section class="solutions">
+            <div class="section-head container">
+                <h2>Megoldásaink minden helyzetre</h2>
+            </div>
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" onclick="showTab(0)">Családi Ház</button>
+                    <button class="tab-btn" onclick="showTab(1)">Irodaház</button>
+                    <button class="tab-btn" onclick="showTab(2)">Ipari Létesítmény</button>
+                </div>
+                <div id="tab-0" class="tab-content active">
+                    <div class="tab-text">
+                        <h3>Biztonság az egész családnak</h3>
+                        <p>Védje meg szeretteit és értékeit okos riasztórendszerekkel, amelyek okostelefonról is
+                            vezérelhetők. Tűz- és gázérzékelőkkel kiegészítve a teljes nyugalomért.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/security.png" alt="Modern otthoni biztonság" style="border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="tab-1" class="tab-content">
+                    <div class="tab-text">
+                        <h3>Irodai Beléptetés és Megfigyelés</h3>
+                        <p>Hatékony beléptető rendszerek és diszkrét kamerás megfigyelés az irodai munka
+                            zavartalanságáért. Munkatársai biztonsága az első.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/cleaning.png" alt="Irodai megoldások" style="border-radius: 8px;">
+                    </div>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <div class="tab-text">
+                        <h3>Ipari és Logisztikai Védelem</h3>
+                        <p>Nagy kiterjedésű telephelyek őrzése intelligens peremvédelemmel és hőkamerás rendszerekkel.
+                            24 órás kivonuló szolgálattal.</p>
+                    </div>
+                    <div class="tab-image">
+                        <img src="assets/hero.png" alt="Ipari védelem" style="border-radius: 8px;">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-grid">
+            <div class="footer-col col-info">
+                <h4>Pestor Biztonságtechnikai Kft.</h4>
+                <p>Évtizedes szakmai tapasztalat, megbízhatóság és innováció a biztonságtechnika és a takarítás
+                    területén.</p>
+                <p style="margin-top:20px;">Email: info@pestor.hu</p>
+                <p>Tel: +36 1 234 5678</p>
+            </div>
+            <div class="footer-col">
+                <h4>Szolgáltatások</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Helyszíni felmérés</a></li>
+                    <li><a href="#">Riasztórendszerek</a></li>
+                    <li><a href="#">Kamerák</a></li>
+                    <li><a href="#">Takarítás</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Vállalat</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Rólunk</a></li>
+                    <li><a href="#">Karrier</a></li>
+                    <li><a href="#">Referenciák</a></li>
+                    <li><a href="#">Kapcsolat</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Segítség</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Támogatás</a></li>
+                    <li><a href="#">GYIK</a></li>
+                    <li><a href="#">Letöltések</a></li>
+                    <li><a href="#">ÁSZF</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 Pestor Biztonságtechnikai Kft. Minden jog fenntartva.</p>
+            <div class="socials">
+                <a href="#">FB</a> | <a href="#">LI</a> | <a href="#">IN</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
