@@ -46,61 +46,184 @@ img {
 }
 
 /* --- Navigation --- */
-header {
-    background: var(--bg-light);
-    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+.new-header {
+    background: transparent;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
 }
 
-.top-bar {
+.header-inner {
+    display: flex;
+    align-items: stretch;
+    background: var(--bg-light);
+    padding: 0;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background: var(--bg-light);
+    border-radius: 0 0 0 10px;
+}
+
+.brand-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--secondary-color);
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 1px;
+}
+
+.brand-subtitle {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-top: 4px;
+}
+
+.header-right {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
     background: var(--secondary-color);
     color: white;
-    padding: 8px 0;
-    font-size: 13px;
-    font-weight: 500;
-}
-
-.top-bar .container {
+    padding: 10px 30px;
     display: flex;
     justify-content: flex-end;
-    gap: 30px;
+    align-items: center;
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 0 0 10px 0;
 }
 
-.top-bar a:hover {
+.top-row-text {
+    margin-right: 20px;
+    color: #dddddd;
+}
+
+.top-row-phone {
+    font-weight: 700;
     color: var(--primary-color);
+    font-size: 15px;
 }
 
-.main-nav {
-    height: 80px;
+.bottom-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background: var(--bg-light);
+    padding: 0 30px;
+    height: 70px;
+    border-radius: 0 0 10px 0;
 }
 
-.logo img {
-    height: 50px;
+.main-menu {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    padding-right: 30px;
 }
 
-.nav-links {
+.nav-list {
     display: flex;
     gap: 40px;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 0.5px;
 }
 
-.nav-links a:hover {
+.nav-item {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-item > a {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 25px 0;
+}
+
+.nav-item > a:hover {
     color: var(--primary-color);
+}
+
+.dropdown-icon {
+    font-size: 11px;
+}
+
+/* Dropdown Menu */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%) translateY(15px);
+    background: var(--bg-light);
+    min-width: 320px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+    border-radius: 8px;
+    padding: 20px 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border-top: 4px solid var(--primary-color);
+    z-index: 100;
+}
+
+.nav-item:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-menu li {
+    width: 100%;
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 10px 25px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--text-main);
+    transition: all 0.2s ease;
+    border-bottom: 1px solid rgba(0,0,0,0.03);
+}
+
+.dropdown-menu li:last-child a {
+    border-bottom: none;
+}
+
+.dropdown-menu a:hover {
+    background: #fdfdfd;
+    color: var(--primary-color);
+    padding-left: 32px;
 }
 
 .nav-actions {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .btn {
@@ -323,6 +446,18 @@ footer {
 }
 
 /* --- Mobile Responsive --- */
+@media (max-width: 1024px) {
+    .main-menu {
+        display: none;
+    }
+    .top-row-text {
+        display: none;
+    }
+    .header-left, .bottom-row {
+        padding: 0 20px;
+    }
+}
+
 @media (max-width: 992px) {
     .hero .container, .tab-content.active {
         grid-template-columns: 1fr;
@@ -333,9 +468,6 @@ footer {
     .hero-content h1 {
         font-size: 40px;
     }
-    .nav-links {
-        display: none;
-    }
 }
 
 @media (max-width: 768px) {
@@ -345,4 +477,11 @@ footer {
     .footer-grid {
         grid-template-columns: 1fr;
     }
+    .brand-title {
+        font-size: 20px;
+    }
+    .brand-subtitle {
+        font-size: 14px;
+    }
 }
+
