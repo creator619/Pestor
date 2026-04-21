@@ -16,13 +16,12 @@ function showTab(tabIndex) {
 
 // Simple Scroll Reveal Effect (Optional/Minimal)
 window.addEventListener('scroll', () => {
-    const header = document.querySelector('header');
+    const header = document.querySelector('.new-header');
     if (window.scrollY > 50) {
-        header.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
-        header.style.padding = '5px 0';
+        header.style.transform = 'translateY(-30px)'; // Hide the top row slightly or adjust styles
+        header.style.transition = 'transform 0.3s ease';
     } else {
-        header.style.boxShadow = '0 2px 15px rgba(0,0,0,0.05)';
-        header.style.padding = '0';
+        header.style.transform = 'translateY(0)';
     }
 });
 
