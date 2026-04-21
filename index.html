@@ -16,31 +16,81 @@
 
 <body>
 
-    <header>
-        <div class="top-bar">
-            <div class="container">
-                <a href="#">Lakossági</a>
-                <a href="#">Üzleti</a>
-                <a href="#">Ipari</a>
-                <a href="#">Kapcsolat</a>
+    <header class="new-header">
+        <div class="header-inner container">
+            <!-- Bal oldali logó rész színezés nélkül -->
+            <div class="header-left">
+                <a href="#" class="brand-logo">
+                    <span class="brand-title">Pestor csoport</span>
+                    <span class="brand-subtitle">30 + év</span>
+                </a>
+            </div>
+            
+            <!-- Jobb oldali sávok -->
+            <div class="header-right">
+                <!-- Felső szürke sor -->
+                <div class="top-row">
+                    <span class="top-row-text">Kérdés esetén hívja közvetlenül szakértőinket, vagy írjon nekünk.</span>
+                    <span class="top-row-phone">+36 1 234 5678</span>
+                </div>
+                
+                <!-- Alsó fehér/világos sor a navigációval -->
+                <div class="bottom-row">
+                    <nav class="main-menu">
+                        <ul class="nav-list">
+                            <li class="nav-item dropdown">
+                                <a href="#">Otthonok <span class="dropdown-icon">▼</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Riasztó rendszerek</a></li>
+                                    <li><a href="#">Kamerás rendszerek</a></li>
+                                    <li><a href="#">Távfelügyelet</a></li>
+                                    <li><a href="#">Személyvédelem, rablás</a></li>
+                                    <li><a href="#">Tűzvédelem</a></li>
+                                    <li><a href="#">Gáz- és vízszivárgás</a></li>
+                                    <li><a href="#">Technikai rendszerek karbantartása, és hibaelhárítása</a></li>
+                                    <li><a href="#">Eseti őrzés fokozott biztonsági helyzetben</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#">Ipar – üzletek <span class="dropdown-icon">▼</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Élő erős őrzés</a></li>
+                                    <li><a href="#">Idegennyelvű recepció</a></li>
+                                    <li><a href="#">Rendezvény biztosítás</a></li>
+                                    <li><a href="#">Komplex védelem</a></li>
+                                    <li><a href="#">Riasztó rendszerek</a></li>
+                                    <li><a href="#">Kamerás rendszerek</a></li>
+                                    <li><a href="#">Beléptető rendszerek</a></li>
+                                    <li><a href="#">Tűzvédelmi rendszerek</a></li>
+                                    <li><a href="#">Távfelügyelet</a></li>
+                                    <li><a href="#">Technikai rendszerek karbantartása, és hibaelhárítása</a></li>
+                                    <li><a href="#">Ipartelepek takarítása és udvarkarbantartása</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a href="#">Önkormányzatok <span class="dropdown-icon">▼</span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Élő erős őrzés</a></li>
+                                    <li><a href="#">Idegennyelvű recepció</a></li>
+                                    <li><a href="#">Rendezvény biztosítás</a></li>
+                                    <li><a href="#">Komplex védelem</a></li>
+                                    <li><a href="#">Riasztó rendszerek</a></li>
+                                    <li><a href="#">Kamerás rendszerek</a></li>
+                                    <li><a href="#">Beléptető rendszerek</a></li>
+                                    <li><a href="#">Tűzvédelmi rendszerek</a></li>
+                                    <li><a href="#">Távfelügyelet</a></li>
+                                    <li><a href="#">Technikai rendszerek karbantartása, és hibaelhárítása</a></li>
+                                    <li><a href="#">Ipartelepek takarítása és udvarkarbantartása</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="nav-actions">
+                        <button class="btn btn-primary" id="quote-btn">Ajánlatkérés</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <nav class="main-nav container">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Pestor Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#biztonsag">Biztonságtechnika</a></li>
-                <li>
-                <li><a href="#orzes">Élőerős Őrzés</a></li>
-                <li><a href="#takaritas">Takarítás</a></li>
-                <li><a href="#rolunk">Rólunk</a></li>
-            </ul>
-            <div class="nav-actions">
-                <button class="btn btn-outline" id="search-btn">Keresés</button>
-                <button class="btn btn-primary" id="quote-btn">Ajánlatkérés</button>
-            </div>
-        </nav>
     </header>
 
     <main>
@@ -57,7 +107,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="assets/hero.png" alt="Modern biztonsági megoldások">
+                    <img src="hero.png" alt="Modern biztonsági megoldások">
                 </div>
             </div>
         </section>
@@ -72,7 +122,7 @@
                 <div class="services-grid">
                     <!-- Service 1 -->
                     <div class="service-card">
-                        <img src="assets/security.png" alt="Biztonságtechnika">
+                        <img src="security.png" alt="Biztonságtechnika">
                         <div class="service-card-body">
                             <h3>Biztonságtechnika</h3>
                             <p>Intelligens riasztórendszerek, HD kamerás megfigyelés és beléptető rendszerek telepítése
@@ -82,7 +132,7 @@
                     </div>
                     <!-- Service 2 -->
                     <div class="service-card">
-                        <img src="assets/hero.png" alt="Élőerős őrzés">
+                        <img src="hero.png" alt="Élőerős őrzés">
                         <div class="service-card-body">
                             <h3>Élőerős Őrzés</h3>
                             <p>Több mint 200 képzett szakemberrel biztosítjuk telephelyek, irodák és rendezvények
@@ -92,7 +142,7 @@
                     </div>
                     <!-- Service 3 -->
                     <div class="service-card" id="takaritas">
-                        <img src="assets/cleaning.png" alt="Takarítás">
+                        <img src="cleaning.png" alt="Takarítás">
                         <div class="service-card-body">
                             <h3>BP-Cleanic Takarítás</h3>
                             <p>Professzionális takarítási szolgáltatások irodák, raktárak és magánházak részére
@@ -122,7 +172,7 @@
                             vezérelhetők. Tűz- és gázérzékelőkkel kiegészítve a teljes nyugalomért.</p>
                     </div>
                     <div class="tab-image">
-                        <img src="assets/security.png" alt="Modern otthoni biztonság" style="border-radius: 8px;">
+                        <img src="security.png" alt="Modern otthoni biztonság" style="border-radius: 8px;">
                     </div>
                 </div>
                 <div id="tab-1" class="tab-content">
@@ -132,7 +182,7 @@
                             zavartalanságáért. Munkatársai biztonsága az első.</p>
                     </div>
                     <div class="tab-image">
-                        <img src="assets/cleaning.png" alt="Irodai megoldások" style="border-radius: 8px;">
+                        <img src="cleaning.png" alt="Irodai megoldások" style="border-radius: 8px;">
                     </div>
                 </div>
                 <div id="tab-2" class="tab-content">
@@ -142,7 +192,7 @@
                             24 órás kivonuló szolgálattal.</p>
                     </div>
                     <div class="tab-image">
-                        <img src="assets/hero.png" alt="Ipari védelem" style="border-radius: 8px;">
+                        <img src="hero.png" alt="Ipari védelem" style="border-radius: 8px;">
                     </div>
                 </div>
             </div>
